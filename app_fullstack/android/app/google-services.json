@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "88003743255",
+    "project_id": "appstack-d5278",
+    "storage_bucket": "appstack-d5278.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88003743255:android:eaebd57e020d672e415652",
+        "android_client_info": {
+          "package_name": "com.appfullstack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4MQKfIkp3V8wEsZiweCRBh7McUJwo4Rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
