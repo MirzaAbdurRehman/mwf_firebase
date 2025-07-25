@@ -15,6 +15,10 @@ class _SignupScreenState extends State<SignupScreen> {
   
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+  final nameController = TextEditingController();
+  final addressController = TextEditingController();
+  final phonneController = TextEditingController();
+
   final formkey = GlobalKey<FormState>();
 
   bool isLoading = false;
@@ -76,7 +80,28 @@ class _SignupScreenState extends State<SignupScreen> {
                           label: 'Password',
                           hintText: "Enter Your Password",
                           icon: Icons.lock,
-                          isShow: true,
+                        isShow: true, // activates toggle icon
+                        ),
+                            const SizedBox(height: 20),
+                           CustomTextField(
+                          controller1: nameController,
+                          label: 'Name',
+                          hintText: "Enter Your Name",
+                          icon: Icons.email,
+                        ),
+                            const SizedBox(height: 20),
+                           CustomTextField(
+                          controller1: addressController,
+                          label: 'Address',
+                          hintText: "Enter Your Address",
+                          icon: Icons.email,
+                        ),
+                            const SizedBox(height: 20),
+                           CustomTextField(
+                          controller1: phonneController,
+                          label: 'Phone Number',
+                          hintText: "Enter Your Phone Number",
+                          icon: Icons.email,
                         ),
                         const SizedBox(height: 30),
                         SizedBox(
@@ -91,6 +116,9 @@ class _SignupScreenState extends State<SignupScreen> {
             formKey: formkey,
             emailController: emailController,
             passwordController: passwordController,
+            nameController: nameController,
+            addressController: addressController,
+            phonneController: phonneController,
             setLoadingOn: () => setState(() => isLoading = true),
             setLoadingOff: () => setState(() => isLoading = false),
           );

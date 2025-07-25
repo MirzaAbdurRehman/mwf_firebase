@@ -85,7 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         label: 'Password',
                         hintText: "Enter your password",
                         icon: Icons.lock,
-                        isShow: true,
+                        isShow: true, 
                       ),
                       const SizedBox(height: 30),
                       SizedBox(
